@@ -43,6 +43,7 @@ puts "Rounded error: #{result[1]}"
 
 ## Contributing
 
+Contributions to this project are only accepted in its [GitLab repo](https://gitlab.com/jparaque/pdground)
 If you want to contribute to improve this gem with any bug fix or new feature:
 * First open an issue to discuss the bug or feature
 * Place a merge request referring to the issue once agreed to include it
