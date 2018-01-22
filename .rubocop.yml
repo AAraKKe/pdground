@@ -1,2 +1,4 @@
 Metrics/AbcSize:
   Max: 20
+AllCops:
+  TargetRubyVersion: 2.4
