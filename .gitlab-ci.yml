@@ -25,4 +25,4 @@ publish:
     url: https://rubygems.org/gems/pdground
   script:
   - gem install dpl
-  - dpl ---provider=rubygems --api-key=$RUBYGEMS_KEY
+  - dpl --provider=rubygems --api-key=$RUBYGEMS_KEY
