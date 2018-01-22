@@ -16,10 +16,10 @@ end
 
 class Integer
   def sigfig(digits)
-    self.to_f.sigfig(digits)
+    to_f.sigfig(digits)
   end
 
   def hisigfig(digits)
-    self.to_f.hisigfig(digits)
+    to_f.hisigfig(digits)
   end
 end

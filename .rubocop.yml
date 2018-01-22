@@ -2,3 +2,10 @@ Metrics/AbcSize:
   Max: 20
 AllCops:
   TargetRubyVersion: 2.4
+Style/BlockLength:
+  Exclude:
+    - 'Rakefile'
+    - '**/*.rake'
+    - 'spec/**/*_spec.rb'
+Style/NumericLiterals:
+  Enabled: false
