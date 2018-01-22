@@ -1,3 +1,4 @@
+[![Gem Version](https://badge.fury.io/rb/pdground.svg)](https://badge.fury.io/rb/pdground)
 # Pdground
 
 PDGRound allows you to round a number with an uncertainty using the PDG rounding rules.
