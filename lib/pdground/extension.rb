@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Redefine float with the apropriate options
 class Float
   def sigfig(digits)
