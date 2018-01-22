@@ -9,3 +9,5 @@ Style/BlockLength:
     - 'spec/**/*_spec.rb'
 Style/NumericLiterals:
   Enabled: false
+Metrics/LineLength:
+  Max: 100

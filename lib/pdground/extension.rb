@@ -14,6 +14,7 @@ class Float
   end
 end
 
+# Redefine Integer class to include the same methods as Float
 class Integer
   def sigfig(digits)
     to_f.sigfig(digits)
