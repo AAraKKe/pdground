@@ -11,9 +11,11 @@ Gem::Specification.new do |spec|
   spec.authors       = ['J.P. Araque']
   spec.email         = ['erjuanpea@gmail.com']
 
-  spec.summary       = 'Round numbers using the PDGRound rounding rules'
-  spec.description   = 'Provides an easy to use function to round any value
-with a given uncertainty following PDG rounding rules'
+  spec.summary       = 'Round numbers using the PDG rounding rules'
+  spec.description   = 'Provides an easy way to round any value
+                        with a given uncertainty following PDG rounding rules. Mainly consists of a
+                        Pdground module witha round method which will round the central value and
+                        uncertainty.'
   spec.homepage      = 'https://gitlab.com/jparaque/pdground'
   spec.license       = 'MIT'
 

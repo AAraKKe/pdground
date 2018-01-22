@@ -13,3 +13,13 @@ class Float
     format("%.#{digits - 1}e", self).split('e')[0].delete('.')
   end
 end
+
+class Integer
+  def sigfig(digits)
+    self.to_f.sigfig(digits)
+  end
+
+  def hisigfig(digits)
+    self.to_f.hisigfig(digits)
+  end
+end
