@@ -30,5 +30,6 @@ rubygems:
     name: rubygems
     url: https://rubygems.org/gems/pdground
   script:
+  - gem build pdground.gemspec
   - gem install dpl
   - dpl --provider=rubygems --api-key=$RUBYGEMS_KEY
