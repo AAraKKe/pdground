@@ -9,8 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["J.P. Araque"]
   spec.email         = ["erjuanpea@gmail.com"]
 
-  spec.summary       = 'Round numbers using the PDG rounding rules'
-  spec.description   = 'Extend Float class with a pdg_round method which will round the number following PDG rounding
+  spec.summary       = 'Round numbers using the PDGRound rounding rules'
+  spec.description   = 'Extend Float class with a pdg_round method which will round the number following PDGRound rounding
  rules'
   spec.homepage      = "https://gitlab.com/jparaque/pdground"
   spec.license       = "MIT"
@@ -25,5 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.16"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "rubocop"
+  spec.add_development_dependency "rubocop", "~> 0"
+  spec.add_development_dependency "simplecov", "~> 0"
+
 end

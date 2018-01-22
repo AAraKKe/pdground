@@ -1,5 +1,3 @@
 require "pdground/version"
-
-module Pdground
-  # Your code goes here...
-end
+require "pdground/extension"
+require "pdground/pdground"
