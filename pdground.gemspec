@@ -1,4 +1,6 @@
 
+# frozen_string_literal: true
+
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'pdground/version'
@@ -10,9 +12,8 @@ Gem::Specification.new do |spec|
   spec.email         = ['erjuanpea@gmail.com']
 
   spec.summary       = 'Round numbers using the PDGRound rounding rules'
-  spec.description   = 'Extend Float class with a pdg_round method which will
-                        round the number following PDGRound rounding
- rules'
+  spec.description   = 'Provides an easy to use function to round any value
+with a given uncertainty following PDG rounding rules'
   spec.homepage      = 'https://gitlab.com/jparaque/pdground'
   spec.license       = 'MIT'
 

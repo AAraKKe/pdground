@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # PDGRound module
 module PDGRound
   # Main function for the rounding
