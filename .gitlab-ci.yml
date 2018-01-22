@@ -1,5 +1,8 @@
 image: "ruby:2.4"
 
+stages:
+  - test
+  - publish
 # This is a basic example for a gem or script which doesn't use
 # services such as redis or postgres
 before_script:
@@ -9,15 +12,18 @@ before_script:
 
 # Optional - Delete if not using `rubocop`
 rubocop:
+  stage: test
   script:
   - rubocop
 
 rspec:
+  stage: test
   script:
   - rspec spec
 
 # Use dpl to publish the tem
-publish:
+rubygems:
+  stage: publish
   only: 
   - master
   environment: 
