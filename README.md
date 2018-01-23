@@ -34,7 +34,7 @@ require 'pdground'
 
 value = 12.2135
 error = 0.06515
-result = PDGRound::round(meas: value, unc: error)
+result = PDGRound.round(meas: value, unc: error)
 puts "Rounded value: #{result[0]}"
 puts "Rounded error: #{result[1]}"
 # Rounded value: 12.21

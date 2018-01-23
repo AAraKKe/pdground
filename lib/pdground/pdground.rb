@@ -50,7 +50,7 @@ module PDGRound
 
   def self.meas(meas, unc)
     if (dec = unc.split('.')[1])
-      format("%.#{dec.size}f", meas.to_f)
+      meas.to_f.round(dec.size).to_s
     else
       meas.to_f.round(unc.gsub(/0+$/, '').size - unc.size).to_s
     end
