@@ -7,7 +7,7 @@ require 'pdground/version'
 
 Gem::Specification.new do |spec|
   spec.name          = 'pdground'
-  spec.version       = Pdground::VERSION
+  spec.version       = PDGRound::VERSION
   spec.authors       = ['J.P. Araque']
   spec.email         = ['erjuanpea@gmail.com']
 
@@ -32,5 +32,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop', '~> 0.50'
   spec.add_development_dependency 'simplecov', '~> 0'
 
-  spec.required_ruby_version = '~> 2.4'
+  spec.required_ruby_version = '~> 2.0'
 end

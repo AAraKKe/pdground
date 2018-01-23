@@ -16,7 +16,13 @@ rubocop:
   script:
   - rubocop
 
-rspec:
+rspec:2.4:
+  stage: test
+  script:
+  - rspec spec
+
+rspec:2.0:
+  image: "ruby:2.4"
   stage: test
   script:
   - rspec spec

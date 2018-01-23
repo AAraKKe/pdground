@@ -8,6 +8,7 @@ module PDGRound
       raise ArgumentError 'To round a value you need a value and an
                            uncertainty (:val and :unc parameters)'
     end
+    args.each { |k, v| args[k] = v.to_s if v.is_a? Numeric }
     dig = digits(args[:unc]).to_i
     return round_to(args, 2) if dig < 355
     return round_to(args, 1) if dig < 950
@@ -30,7 +31,7 @@ module PDGRound
   def self.round_to(args, digits)
     # Round to a given number of significant digits
     unc = args[:unc].to_f.sigfig(digits)
-    unc = prepare(unc, digits) if unc.size < digits
+    unc = prepare(unc, digits)
     # puts "Rounding: #{args[:meas]} +- #{args[:unc]} ---> #{val} +- #{unc}"
     [meas(args[:meas], unc), unc]
   end
@@ -51,7 +52,7 @@ module PDGRound
     if (dec = unc.split('.')[1])
       format("%.#{dec.size}f", meas.to_f)
     else
-      meas.to_f.round(unc.gsub(/0+$/, '').size - unc.size)
+      meas.to_f.round(unc.gsub(/0+$/, '').size - unc.size).to_s
     end
   end
 
